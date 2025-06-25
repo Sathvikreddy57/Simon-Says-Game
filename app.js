@@ -40,7 +40,7 @@ function playGame() {
 
     let rd = document.querySelector(`.b${rn}`);
     btnFlash(rd);
-    //if we donot want to access by numbers, then make an array outside which has button colors in it's indexes, then, let random number generate a random array index, and we can flash that button by selecting by it's color class, but for that we should create color classes. Watch mega for that method. 
+    //if we donot want to access by numbers, then make an array outside which has button colors in it's indexes, then, let random number generate a random array index, and we can flash that button by selecting by it's color class, but for that we should create color classes.  
 
     gameSeq.push(rn);
     console.log('game sequence is', gameSeq);
@@ -73,8 +73,7 @@ function btnPressed() {
     }
 
     // console.log(`button ${this.innerText} was pressed`); //removing this once the code is completed
-    //here 'this' automatically refers to the button pressed as it is the one calling it using i.addEventListener(event,function(){}), here button 'i' is calling the function so 'this' is  'i'. 
-
+    //here 'this' automatically refers to the button pressed as it is the one calling it using i.addEventListener(event,function(){})
     userFlash(this);
     userSeq.push(Number(this.innerText));
 
